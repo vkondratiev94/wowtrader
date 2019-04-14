@@ -1,0 +1,66 @@
+@import '../../styles/colors.scss';
+
+.container {
+  padding: 20px;
+
+  @media (min-width: 992px) {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+table {
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  border-collapse: collapse;
+
+  th, td {
+    text-align: left;
+    font-weight: 400;
+    padding: 20px 10px;
+  }
+
+  th {
+    font-size: 1.25rem;
+  }
+
+  td {
+    font-size: 1rem;
+  }
+
+  th:first-child,
+  td:first-child {
+    width: 3rem;
+    text-align: center;
+
+    @media (min-width: 992px) {
+      width: 5rem;
+    }
+  }
+
+  th:last-child,
+  td:last-child {
+    width: 7rem;
+    text-align: center;
+  }
+
+  thead {
+    background-color: $thead-bg-color;
+    color: $thead-font-color;
+  }
+
+  tbody {
+    background-color: #fff;
+
+    tr {
+      border-bottom: 1px solid $tr-hover-color;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $tr-hover-color;
+      }
+    }
+  }
+}

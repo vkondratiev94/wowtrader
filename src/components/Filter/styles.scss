@@ -1,0 +1,33 @@
+@import '../../styles/colors.scss';
+
+.filters-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+
+  .checkbox {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    margin-right: 5px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    border: 0.8px solid $font-default-color;
+    background-color: #fff;
+    cursor: pointer;
+
+    &--checked {
+      border-color: #7ED321;
+    }
+
+    i {
+      color: #7ED321;
+      font-size: 14px;
+    }
+  }
+}

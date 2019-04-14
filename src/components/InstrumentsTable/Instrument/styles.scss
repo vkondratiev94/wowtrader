@@ -1,0 +1,11 @@
+@import '../../../styles/colors.scss';
+
+.status {
+  &--opened {
+    color: $status-opened-color;
+  }
+
+  &--closed {
+    color: $status-closed-color;
+  }
+}
