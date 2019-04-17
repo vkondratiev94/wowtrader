@@ -9,10 +9,9 @@ const Filter = ({ isOpenOnly, handleIsOpenChange }) => {
   }
   return (
     <div className='filters-wrapper'>
-      <div className='filter'>
+      <div className='filter' onClick={handleIsOpenChange}>
         <div
           className={checkboxClasses.join(' ')}
-          onClick={handleIsOpenChange}
         >
           {isOpenOnly && <i className='fas fa-check' />}
         </div>

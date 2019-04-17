@@ -8,6 +8,7 @@
 .filter {
   display: flex;
   align-items: center;
+  cursor: pointer;
 
   .checkbox {
     width: 20px;
@@ -19,7 +20,6 @@
     justify-content: center;
     border: 0.8px solid $font-default-color;
     background-color: #fff;
-    cursor: pointer;
 
     &--checked {
       border-color: #7ED321;
